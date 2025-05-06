@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Record</title>
+    <style>
+        /* Quick inline CSS */
+        body {
+            background-color: #E6E9ED;
+            font-family: 'Lobster', cursive;
+            margin: 0;
+            padding: 0;
+        }
+
+        .mydiv {
+            background-color: #714b67;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .formdiv {
+            background-color: #e3dbe1;
+            height: auto;
+            width: 300px;
+            margin: 10px auto;
+            padding: 20px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .formdiv table {
+            width: 100%;
+        }
+
+        .formdiv input[type="text"],
+        .formdiv input[type="password"],
+        .formdiv button[type="submit"],
+        .formdiv input[type="reset"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .formdiv button[type="submit"],
+        .formdiv input[type="reset"] {
+            background-color: #714b67;
+            color: white;
+            cursor: pointer;
+        }
+
+        .formdiv input[type="submit"]:hover,
+        .formdiv input[type="reset"]:hover {
+            background-color: #5b3657;
+        }
+
+    </style>
+</head>
+<body>
+<div class="mydiv" align="center">
+<h1>Delete Students</h1>
+</div>
+    <form action="deleteController" method="post" class ="formdiv">
+    <label>Enter Student ID:</label>
+    <input type="text" name="id" required placeholder="Enter ID "><br><br>
+ <button type="submit">Delete Student</button> 
+</form>
+
+</body>
+</html>
+

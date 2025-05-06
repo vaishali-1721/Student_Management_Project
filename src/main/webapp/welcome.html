@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Welcome</title>
+   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* Quick inline CSS */
+        body {
+            background-color: #E6E9ED;
+            font-family: 'Lobster', cursive;
+            margin: 0;
+            padding: 0;
+        }
+
+        .mydiv {
+            background-color: #714b67;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .formdiv {
+            background-color: #e3dbe1;
+            height: 10px;
+            width: 300px;
+            margin: 30px auto;
+            padding: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .formdiv table {
+            width: 100%;
+        }
+
+        .formdiv button[type="text"],
+        .formdiv button[type="password"],
+        .formdiv button[type="submit"],
+        .formdiv button[type="reset"] {
+            width: 100%;
+             padding: 10px; 
+            margin: 10px 0;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .formdiv button[type="submit"],
+        .formdiv button[type="submit"] {
+            background-color: #714b67;
+            color: white;
+            cursor: pointer;
+        }
+
+        .formdiv button[type="submit"]:hover,
+        .formdiv button[type="submit"]:hover {
+            background-color: #5b3657;
+        }
+
+    </style>
+</head>
+<body>
+<div class="mydiv" align="center">
+<h1>Admit Page</h1>
+</div>
+<form action="AddStudent" method=post align="centre" class="formdiv">
+   <button type="submit">Add Student</button>
+   <br>
+   </form>
+   <form action="ViewStudent" method=Get align="centre" class="formdiv" >
+   <button type="submit">ViewAll Student</button>
+   <br>
+   </form>
+   <form action="UpdateStudent" method=post align="centre" class="formdiv">
+   <button type="submit">Update Student</button>
+   <br>
+    </form>
+     <form action="deleteController" method=get align="centre" class="formdiv">
+    <button type="submit">Delete Student</button>
+      </form>
+
+  <br>
+</body>
+</html>

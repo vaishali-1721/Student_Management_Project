@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Update Students Records</title>
+<style>
+        /* Quick inline CSS */
+        body {
+            background-color: #E6E9ED;
+            font-family: 'Lobster', cursive;
+            margin: 0;
+            padding: 0;
+        }
+
+        .mydiv {
+            background-color: #714b67;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .formdiv {
+            background-color: #e3dbe1;
+            height: auto;
+            width: 300px;
+            margin: 10px auto;
+            padding: 20px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .formdiv table {
+            width: 100%;
+        }
+
+        .formdiv input[type="text"],
+        .formdiv input[type="password"],
+        .formdiv input[type="submit"],
+        .formdiv input[type="Back"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .formdiv input[type="submit"],
+        .formdiv input[type="Back"] {
+            background-color: #714b67;
+            color: white;
+            cursor: pointer;
+        }
+
+        .formdiv input[type="submit"]:hover,
+        .formdiv input[type="Back"]:hover {
+            background-color: #5b3657;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="mydiv" align="center">
+<h1>Update Students</h1>
+</div>
+<form action="UpdateStudent" method=post class="formdiv">
+  <label>Student ID:</label><input type="number" name="id" required><br> 
+   <label>Update Name:</label><input type="text" name="name"><br>
+    <label>Update Age:</label><input type="number" name="age"><br>
+    <label>Update Class:</label><input type="text" name="classname"><br>
+    <label>Update Address:</label><input type="text" name="address"><br>
+   <tr><td><input type="submit" value="Update Students"></td><td><input type="Back" value="Back" ></td></tr>
+</form>
+</body>
+</html>

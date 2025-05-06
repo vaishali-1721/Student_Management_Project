@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* Quick inline CSS */
+        body {
+            background-color: #E6E9ED;
+            font-family: 'Lobster', cursive;
+            margin: 0;
+            padding: 0;
+        }
+
+        .mydiv {
+            background-color: #714b67;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .formdiv {
+            background-color: #e3dbe1;
+            height: auto;
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .formdiv table {
+            width: 100%;
+        }
+
+        .formdiv input[type="text"],
+        .formdiv input[type="password"],
+        .formdiv input[type="submit"],
+        .formdiv input[type="reset"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .formdiv input[type="submit"],
+        .formdiv input[type="reset"] {
+            background-color: #714b67;
+            color: white;
+            cursor: pointer;
+        }
+
+        .formdiv input[type="submit"]:hover,
+        .formdiv input[type="reset"]:hover {
+            background-color: #5b3657;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="mydiv" align="center">
+   <h1><i class="fa-solid fa-chalkboard-user"></i> Admin Login</h1>
+</div>
+
+<form action="LoginServlet" method="post" class="formdiv">
+    <table>
+        <tr><td>Enter Name:</td><td><input type="text" name="txtName" placeholder="Enter Username"></td></tr>
+        <tr><td>Enter Password:</td><td><input type="password" name="txtPwd" placeholder="Enter Password"></td></tr>
+        <tr><td><input type="submit" value="Login"></td><td><input type="reset"></td></tr>
+    </table>
+</form>
+
+</body>
+</html>
